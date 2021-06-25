@@ -1,0 +1,33 @@
+<header>
+  <p>Schedule</p>
+  <div class="btn">
+    <button mat-flat-button color="accent">
+      Home
+    </button>
+    <button mat-flat-button color="accent">
+      Home
+    </button>
+  </div>
+</header>
+<section>
+  <div class="all" *ngFor="let x of index">
+    <div>
+      <h4>
+        {{ x.title | uppercase }}
+        <br />
+        <span>
+          <button mat-icon-button>
+            <mat-icon> {{x.icon}} </mat-icon>
+          </button>
+          {{ x.subtitle | titlecase }} 
+          <button mat-icon-button>
+            <mat-icon> {{x.eventIcon}} </mat-icon>
+          </button>
+          {{ x.event | titlecase }} 
+        </span>
+      </h4>
+    </div>
+
+    <button mat-icon-button>></button>
+  </div>
+</section>

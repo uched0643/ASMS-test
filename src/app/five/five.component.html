@@ -1,0 +1,35 @@
+<header style="display: flex; width: 100%; align-items: center; justify-content: space-between;">
+  <h1>Links</h1>
+  <div class="button">
+    <button mat-flat-button color="primary">
+      Home
+    </button>
+    <button style="margin-left: 1rem;" mat-flat-button color="primary">
+      Home
+    </button>
+  </div>
+</header>
+
+<section>
+  <div class="left">
+<h2>Left Section</h2>
+  </div>
+  <div class="right">
+    <h2>Right Section</h2>
+    <div class="content-upper" *ngFor="let upper of rightSection">
+      <div *ngFor="let item of upper.upperSection" [style.background]='item.bg'>
+        <h2 [style.color]='item.color'> {{item.heading | uppercase}} </h2>
+        <span [style.color]='item.color'>{{ item.sub | titlecase }}</span>
+      </div>
+
+    </div>
+    <div class="lower" *ngFor="let lower of rightSection">
+      <div *ngFor="let i of lower.lowerSection" 
+      [style.background]='i.bg'>
+        <h2 [style.color]='i.color'>{{ i.heading | titlecase }}</h2>
+        <span [style.color]='i.color'>{{ i.sub | titlecase }}</span>
+      </div>
+    
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 1.5rem;
+}
+mat-card-title{
+
+  margin-left: -1rem;
+  h2{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+mat-card-content{
+  h1{
+    font-size: 3.4rem;
+    font-weight: bold;
+    span{
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+}
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+.cardSeven{
+  overflow: hidden;
+}
+/* width */
+
