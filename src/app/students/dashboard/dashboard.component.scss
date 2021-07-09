@@ -1,0 +1,51 @@
+.grid-container {
+    margin: 20px;
+  }
+  
+  .dashboard-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 1.5rem;
+    box-shadow: 3px 4px lightgrey;
+  }
+  mat-card-title{
+    padding: 0%;
+    margin-left: none;
+    h2{
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+  
+  mat-card-content{
+    h1{
+      font-size: .8rem;
+      font-weight: bold;
+    }
+  
+  }
+
+  .mat-badge-medium .mat-badge-content {
+  	font-size: 2rem;
+  }
+
+  .more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  
+  .dashboard-card-content {
+    text-align: center;
+  }
+  .cardSeven{
+    overflow: hidden;
+  }
+  /* width */
+  
+  button:hover{
+    background-color:#69e9e9 
+  }

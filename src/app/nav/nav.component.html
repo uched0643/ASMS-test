@@ -22,7 +22,7 @@
           <br>
           <span>{{item.subtitle | titlecase}}</span>
         </div>
-        <a mat-list-item *ngFor="let i of item.other">
+        <a routerLink='/students' mat-list-item *ngFor="let i of item.other">
           <mat-icon>{{i.icon}}</mat-icon> &nbsp;
           {{ i.items | titlecase }}
         </a>

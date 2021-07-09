@@ -1,0 +1,82 @@
+<div class="grid-container">
+
+    <mat-grid-list cols="3" rowHeight="540px">
+        <mat-grid-tile *ngFor="let profile of profiles | async" [colspan]="1" [rowspan]="1" >
+            <mat-card class="dashboard-card" [ngStyle]="{ 'text-align':'center'}" >
+                <mat-card-header [ngStyle]="{'display':'flex', 'justify-content':'center'}">
+                    <mat-card-title>
+                        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu" xPosition="before">
+                            <button mat-menu-item>More</button>
+                            <button mat-menu-item>Today</button>
+                            <button mat-menu-item>Yesterday</button>
+                        </mat-menu>
+                    </mat-card-title>
+                    <div> 
+                        <mat-icon matBadge="5" mat-badge-large matBadgePosition="below after"  class="mat-icon"  [ngStyle]="{'font-size':'200px','color':'#55898b', 'margin-top':'10px', 'margin-right':'200px'}">account_circle</mat-icon>
+                    </div>
+                </mat-card-header>
+                <mat-card-content class="dashboard-card-content">
+                    <h2>
+                        <strong>{{profile.nom}} {{profile.prenoms}}</strong>
+                        <h1
+                            [ngStyle]="{'color':'grey', 'display':'flex', 'justify-content':'center','align-items':'center'}">
+                            <mat-icon _ngcontent-pkm-c123="" role="img" class="mat-icon" aria-hidden="true"
+                                data-mat-icon-type="font"  [ngStyle]="{ 'color':'#55898b'}">{{profile.icon1}}</mat-icon>
+                            {{profile.ville}}, {{profile.pays}}
+                        </h1>
+                    </h2>
+                    <hr>
+
+                    <hr>
+
+                    <h3 [ngStyle]="{'color':'grey', 'display':'flex', 'justify-content':'center', 'margin-top':'10px'}">
+                        <mat-icon _ngcontent-pkm-c123="" role="img" class="mat-icon" aria-hidden="true"
+                            data-mat-icon-type="font"  [ngStyle]="{ 'color':'#55898b'}">{{profile.icon2}}</mat-icon>
+                        {{profile.email}}
+                    </h3>
+
+                    <h3
+                        [ngStyle]="{'color':'grey', 'display':'flex', 'justify-content':'center', 'margin-top':'10px', 'font-height':'2px'}">
+                        <mat-icon _ngcontent-pkm-c123="" role="img" class="mat-icon" aria-hidden="true"
+                            data-mat-icon-type="font"  [ngStyle]="{ 'color':'#55898b'}" >{{profile.icon3}}</mat-icon>
+                        {{profile.jour_de_naissance}}, {{profile.mois_de_naissance}}
+                    </h3>
+                </mat-card-content>
+
+                <button mat-button [ngStyle]="{'position':'relative', 'bottom':'1px', 'color':'blue'}">More about
+                    {{profile.prenoms}}</button>
+            </mat-card>
+
+
+        </mat-grid-tile>
+
+
+        <mat-grid-tile [colspan]="2" >
+            <mat-card class="dashboard-card" [ngStyle]="{ 'text-align':'center'}">
+                <mat-card-header [ngStyle]="{'display':'flex', 'justify-content':'center'}">
+                    <mat-card-title>
+                    </mat-card-title>
+                </mat-card-header>
+            </mat-card>
+
+        </mat-grid-tile>
+
+
+
+        <mat-grid-tile [colspan]="3" >
+            <mat-card class="dashboard-card" [ngStyle]="{ 'text-align':'center'}">
+                <mat-card-header [ngStyle]="{'display':'flex', 'justify-content':'center'}">
+                    <mat-card-title>
+                    </mat-card-title>
+                </mat-card-header>
+            </mat-card>
+
+        </mat-grid-tile>
+
+
+
+    </mat-grid-list>
+</div>

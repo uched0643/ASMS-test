@@ -25,6 +25,9 @@ import { ChartComponent } from './chart/chart.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { FiveComponent } from './five/five.component';
 import { ScheduleComponent } from "./schedule/schedule.component";
+import { DashboardComponent } from './students/dashboard/dashboard.component';
+import { NavbarComponent } from './students/navbar/navbar.component';
+import { DashtoolsComponent } from './students/dashtools/dashtools.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,10 @@ import { ScheduleComponent } from "./schedule/schedule.component";
     StatusReviewComponent,
     ChartComponent,
     FiveComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    DashboardComponent,
+    NavbarComponent,
+    DashtoolsComponent
   ],
   imports: [
     BrowserModule,
